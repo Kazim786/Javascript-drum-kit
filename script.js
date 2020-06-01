@@ -15,4 +15,4 @@ function removeTransition(e){
     this.classList.remove('playing') //This will remove the CSS effects which are triggered when the keys are hit
 }
 const keys = document.querySelectorAll('.key')
-keys.forEach(key => key.addEventListener('transitionend', removeTransition)) //transitionend event is built in event like "click" or "keydown"
+keys.forEach(key => key.addEventListener('transitionend', removeTransition)) //transitionend event is built in event like "click" or "keydown". This loop will run the function for each key
